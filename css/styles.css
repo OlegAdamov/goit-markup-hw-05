@@ -8,6 +8,9 @@
   --main-text-color: #757575;
   --footer-background-color: #2f303a;
   --typical-padding: 94px;
+
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -284,31 +287,29 @@ img {
 }
 
 .main-our-team-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .main-our-team-soc-icon {
   fill: #afb1b8;
 }
-.main-our-team-soc-link:hover {
-  background-color: #2196f3;
-}
+.main-our-team-soc-link:hover,
 .main-our-team-soc-link:focus {
   background-color: #2196f3;
 }
-.main-our-team-soc-link:hover .main-our-team-soc-icon {
-  fill: #fff;
-}
+
+.main-our-team-soc-link:hover .main-our-team-soc-icon,
 .main-our-team-soc-link:focus .main-our-team-soc-icon {
   fill: #fff;
 }
 
-/* -------permanent-clients--------- */
+/* -------Постоянные клиенты - permanent-clients--------- */
 .permanent-clients-group {
   display: flex;
   justify-content: space-between;
@@ -320,20 +321,17 @@ img {
 .permanent-clients-group svg {
   fill: #afb1b8;
 }
-.permanent-clients-link:hover {
-  border-color: #2196f3;
-  cursor: pointer;
-}
+.permanent-clients-link:hover,
 .permanent-clients-link:focus {
   border-color: #2196f3;
   cursor: pointer;
 }
-.permanent-clients-link:hover .permanent-clients-icon {
-  fill: #2196f3;
-}
+
+.permanent-clients-link:hover .permanent-clients-icon,
 .permanent-clients-link:focus .permanent-clients-icon {
   fill: #2196f3;
 }
+
 .permanent-clients-link {
   display: flex;
   border: 1px solid #afb1b8;
