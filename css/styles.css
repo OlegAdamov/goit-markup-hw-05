@@ -54,6 +54,7 @@ img {
 .section {
   padding: var(--typical-padding) 0;
 }
+
 /* -------------------------------HEADER--------------------------------- */
 
 .header {
@@ -89,6 +90,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--header-text-color, #212121);
   padding-bottom: 31px;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .header-list-a:not(:last-child) {
   margin-right: 50px;
@@ -125,6 +128,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .header-connect:hover,
 .header-connect:focus {
@@ -184,13 +189,15 @@ img {
   margin: 0 auto;
   padding: 10px 32px;
   position: relative;
+
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 .main-btn:hover {
   background-color: #188ce8;
 }
 
-/* --------------------OVERLay------------------------ */
-.overlay {
+/* --------------------OVERLay-main------------------------ */
+.overlay-main {
   max-width: 1600px;
   height: 600px;
   outline: 1px solid black;
@@ -245,17 +252,14 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-padding-top: 27px;
-padding-left: auto;
-padding-right: auto;
-padding-bottom: 27px;
+  padding-top: 27px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 27px;
 
-
-  color: #FFFFFF;
-  background-color: rgba(47, 48, 58, 0.8);;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
-
-
 
 .main-specific-aside {
   width: 270px;
@@ -338,9 +342,13 @@ padding-bottom: 27px;
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
+
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 .main-our-team-soc-icon {
   fill: #afb1b8;
+
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 .main-our-team-soc-link:hover,
 .main-our-team-soc-link:focus {
@@ -374,7 +382,9 @@ padding-bottom: 27px;
 .permanent-clients-link:focus .permanent-clients-icon {
   fill: #2196f3;
 }
-
+.permanent-clients-icon {
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
 .permanent-clients-link {
   display: flex;
   border: 1px solid #afb1b8;
@@ -382,6 +392,8 @@ padding-bottom: 27px;
   justify-content: center;
   border-radius: 4px;
   height: 100%;
+
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 .permanent-clients-h2 {
   font-weight: 700;
@@ -421,6 +433,10 @@ padding-bottom: 27px;
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
+
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 .main-button.current {
   color: var(--main-background-color);
@@ -444,6 +460,8 @@ padding-bottom: 27px;
 }
 .portfolio-list a {
   display: block;
+
+  transition: box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 .portfolio-list a:hover,
 .portfolio-list a:focus {
@@ -474,6 +492,9 @@ padding-bottom: 27px;
   color: var(--main-text-color, #757575);
   margin: 0;
 }
+/* ------main-ptf-overlay----- */
+
+
 
 /* -------------------------------FOOTER--------------------------------- */
 .footer {
@@ -547,10 +568,11 @@ padding-bottom: 27px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
-.social-soc-link:hover {
-  background-color: #2196f3;
-}
+.social-soc-link:hover,
 .social-soc-link:focus {
   background-color: #2196f3;
 }
+
