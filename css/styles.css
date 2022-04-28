@@ -493,8 +493,24 @@ img {
   margin: 0;
 }
 /* ------main-ptf-overlay----- */
+.main-ptf-overlay {
+  display: inline-block;
+  position: relative;
+  /* overflow: hidden; */
+}
+/* .main-ptf-overlay-p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
+  transform: translateX(-50%) translateY(-50%);
 
+  font-size: 18px;
+  line-height: 1.56px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+} */
 
 /* -------------------------------FOOTER--------------------------------- */
 .footer {
@@ -575,4 +591,3 @@ img {
 .social-soc-link:focus {
   background-color: #2196f3;
 }
-
