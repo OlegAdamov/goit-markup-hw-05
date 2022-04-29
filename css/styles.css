@@ -494,23 +494,41 @@ img {
 }
 /* ------main-ptf-overlay----- */
 .main-ptf-overlay {
-  display: inline-block;
+  display: block;
+  overflow: hidden;
   position: relative;
-  /* overflow: hidden; */
 }
-/* .main-ptf-overlay-p {
+.main-ptf-overlay img {
+  display: inline-block;
+}
+
+.main-ptf-overlay-wind {
   position: absolute;
+  top: 0;
+  left: 0;
+
   width: 100%;
   height: 100%;
 
-  transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(33, 150, 243, 0.9);
 
+  transform: translateY(100%);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+.portfolio-list a:hover .main-ptf-overlay-wind{
+  transform: translateY(0);
+}
+
+.main-ptf-overlay-wind p {
   font-size: 18px;
-  line-height: 1.56px;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background-color: rgba(33, 150, 243, 0.9);
-} */
+  overflow: auto;
+
+  padding: 63px 24px;
+
+}
 
 /* -------------------------------FOOTER--------------------------------- */
 .footer {
