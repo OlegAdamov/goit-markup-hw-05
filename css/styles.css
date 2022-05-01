@@ -305,13 +305,12 @@ img {
   margin: 0;
   border: 0;
   border-radius: 50%;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border: 1px solid rgba(0, 0, 0, 0.1);
   /* background-color: #fff; */
 }
-/* .icon-close svg{
- 
-  fill: #fff;
-} */
+.icon-close svg{
+   fill: #fff;
+}
 /* -------Specific------- */
 
 .main-specific-aside {
