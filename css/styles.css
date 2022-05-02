@@ -272,7 +272,9 @@ img {
 
   visibility: visible;
   transform: scale(1);
-  transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function), transform var(--transition-duration) var(--transition-timing-function);
+  transition: opacity var(--transition-duration) var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function),
+    transform var(--transition-duration) var(--transition-timing-function);
 }
 
 .is-hidden {
@@ -301,16 +303,15 @@ img {
   top: 8px;
   right: 8px;
   display: flex;
-  padding: 0;
-  margin: 0;
-  border: 0;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  /* background-color: #fff; */
+  fill: #000;
 }
-.icon-close svg{
-   fill: #000;
-}
+
 /* -------Specific------- */
 
 .main-specific-aside {
